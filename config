@@ -109,20 +109,19 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1 Firefox "
 set $ws2 "2 Brave "
-set $ws3 "3 Editor "
+set $ws3 "3 Editor "
 set $ws4 "4 Mail "
 set $ws5 "5 Discord "
 set $ws6 "6 Thunar "
 set $ws7 "7 Alacritty "
-#set $ws8 "8 GitKraken "
-set $ws8 "8 Virtual Machines "
-#set $ws9 "9 Remmina "
-set $ws9 "9 VirtualBox "
+set $ws8 "8 GitKraken "
+#set $ws8 "8 Virtual Machines "
+set $ws9 "9 Remmina "
+#set $ws9 "9 VirtualBox "
 set $ws10 "10 Musik "
 
 assign [class="firefox"] $ws1
 assign [class="Brave-browser"] $ws2
-assign [class="Sublime_text"] $ws3
 assign [class="Joplin"] $ws3
 assign [class="Code"] $ws3
 assign [class="Evolution"] $ws4
@@ -233,13 +232,16 @@ bar {
 gaps inner 5
 gaps outer 5
 
+# Fensterleiste
+
+new_window pixel 1
+
 # autorun at startup
 
 exec --no-startup-id setxkbmap de
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id nextcloud
 exec --no-startup-id numlockx on
-exec --no-startup-id xrandr --output DP-0 --mode 2560x1440 --rate 144
 exec --no-startup-id xset -dpms
 exec --no-startup-id xset s off
 
@@ -261,10 +263,6 @@ bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
-
-
-
-new_window pixel 1
 
 # Start programs
 
