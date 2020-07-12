@@ -117,7 +117,8 @@ set $ws7 "7 Alacritty "
 set $ws8 "8 GitKraken "
 #set $ws8 "8 Virtual Machines "
 #set $ws9 "9 Remmina "
-set $ws9 "9 VirtualBox "
+#set $ws9 "9 VirtualBox "
+set $ws9 "9 Youtube "
 set $ws10 "10 Musik "
 
 assign [class="firefox"] $ws1
